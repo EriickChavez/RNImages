@@ -1,10 +1,16 @@
 import React from 'react';
-import Home from './src/presentation/Screens/Home/Home';
-
+import {Provider} from 'react-redux';
+import {store} from './src/Infrastructure/store/store';
+import NavigationRoute from './src/Navigation/NavigationRoute';
+import 'react-native-gesture-handler';
 interface AppProps {}
 
 const App: React.FC<AppProps> = ({}) => {
-  return <Home />;
+  return (
+    <Provider store={store}>
+      <NavigationRoute />
+    </Provider>
+  );
 };
 
 export default App;

@@ -7,6 +7,7 @@ export default StyleSheet.create({
   },
   container: {
     paddingHorizontal: '5%',
+    flex: 1,
   },
   separatorHorizontal: {
     width: '100%',

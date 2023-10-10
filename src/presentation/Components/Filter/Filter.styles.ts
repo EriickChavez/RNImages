@@ -9,7 +9,9 @@ const FilterCardsStyles = StyleSheet.create({
 });
 
 const FilterListStyles = StyleSheet.create({
-  scroll: {},
+  scroll: {
+    flexWrap: 'wrap',
+  },
   card: {
     marginHorizontal: 5,
   },
